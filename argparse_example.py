@@ -22,3 +22,5 @@ host = args.host
 path = args.file
 im_path = args.imputed
 models = set(args.models)
+
+/opt/h2o/bin/python pipeline.py all -f hdfs://eechpc018.demo.sas.com:8020/hps/simDatalabel_01M.csv -i hdfs://eechpc018.demo.sas.com:8020/hps/imsimDatalabel_01M.csv | tee results_4N_1M_Round2.txt
